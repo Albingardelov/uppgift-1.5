@@ -99,6 +99,7 @@ textarea {
 
 input[type="checkbox"], input[type="radio"] {
     margin-right: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 button[type="submit"] {
@@ -137,35 +138,46 @@ button[type="submit"]:hover {
 }
 
 .image-gallery {
-    display: flex; 
-    justify-content: flex-start; 
-    flex-wrap: wrap; 
+    display: flex;
+    flex-direction: column; /* Gör hela gallerisektionen till en kolumn så att rubriken placeras ovanför bilderna */
+    align-items: center; /* Centrera innehållet horisontellt */
     gap: 0.5em; 
     padding: 10px;
-	background-color: rgb(242, 230, 203);
+    background-color: rgb(242, 230, 203);
+}
 
+.image-gallery h2 {
+    margin-bottom: 1rem; /* Avstånd mellan rubriken och bilderna */
+    text-align: center;  /* Centrera rubriken */
+}
+
+.image-gallery .image-container {
+    display: flex; /* Behåll flex för att rada upp bilderna */
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    width: 100%; /* Full bredd för att fylla behållaren */
 }
 
 .image-gallery img {
     width: 30%;
-	max-width: 100%;
-	flex: 1 1 200px;
-	flex-grow: 1;
-    height: 70vh; 
+    max-width: 100%;
+    flex: 1 1 200px;
+    height: 70vh;
     cursor: pointer;
     box-sizing: border-box;
-	border-radius: 0.3em;
-	filter: grayscale(80%);
-
-	box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
-	transition: all 0.3s ease;
-	transition-delay: 0.2s;
+    border-radius: 0.3em;
+    filter: grayscale(80%);
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    transition-delay: 0.2s;
 }
 
 .image-gallery img:hover {
-	z-index: 10;
-	transform: scale(1.1);
+    z-index: 10;
+    transform: scale(1.1);
 }
+
 
 input:invalid {
 	border: 2px solid red;
