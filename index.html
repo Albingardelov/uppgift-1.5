@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Årlig konferens för frontendutvecklare i Göteborg. Lär dig om de senaste trenderna och teknikerna inom webbdesign och utveckling.">
+    <title>Bättre Webb Konferens 2024</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="navigation.css">
+	<link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation-btns">
+        	<a href="#about">Om Konferensen</a>
+            <a href="#schedule">Schema</a>
+            <a href="#register">Anmälan</a>
+        </nav>
+        <h1>Välkommen till Bättre Webb Konferens 2024</h1>
+        <p>18-20 oktober i Göteborg</p>
+    </header>
+
+	<main>
+		<section class="image-gallery">
+			<img src="Images/pexels1.jpg" alt="Bild på föreläsare">
+			<img src="Images/pexels3.jpg" alt="Bild på föreläsare">
+			<img src="Images/pexels2.jpg" alt="Bild på föreläsare">
+		</section>
+	
+		<section id="about">
+			<h2>Om Konferensen</h2>
+			<p>Bättre Webb är en årlig konferens för personer som arbetar med webbsidor. Här kan du gå på föreläsningar om de senaste nyheterna inom webbutveckling, design och teknologi.</p>
+		</section>
+	
+		<section id="schedule">
+			<h2>Schema</h2>
+			<p>Konferensen är uppdelad över tre dagar med spännande seminarier varje dag.</p>
+	
+			<div class="day">
+				<h3>18 oktober</h3>
+				<ul>
+					<li><strong>Seminarium 1:</strong> Modern CSS med Flexbox och Grid</li>
+					<li><strong>Seminarium 2:</strong> Tillgänglighetsanpassad Webbdesign</li>
+					<li><strong>Seminarium 3:</strong> JavaScript Frameworks i 2024</li>
+				</ul>
+			</div>
+	
+			<div class="day">
+				<h3>19 oktober</h3>
+				<ul>
+					<li><strong>Seminarium 4:</strong> UX Design för Utvecklare</li>
+					<li><strong>Seminarium 5:</strong> Prestandaoptimering för Stora Webbplatser</li>
+					<li><strong>Seminarium 6:</strong> Säkerhet i Frontend Utveckling</li>
+				</ul>
+			</div>
+	
+			<div class="day">
+				<h3>20 oktober</h3>
+				<ul>
+					<li><strong>Seminarium 7:</strong> Bygga Responsiva Webbplatser</li>
+					<li><strong>Seminarium 8:</strong> Animations och Skuggor i CSS</li>
+					<li><strong>Seminarium 9:</strong> Effektiv Versionshantering med Git</li>
+					<li><strong>Seminarium 10:</strong> Att Skala Frontend Arkitektur</li>
+				</ul>
+			</div>
+		</section>
+	
+		<section id="register">
+			<h2>Anmäl dig till konferensen</h2>
+			<form action="#" method="post">
+				<label for="name">Namn:</label>
+				<input type="text" id="name" name="name" required>
+		
+				<label for="email">E-post:</label>
+				<input type="email" id="email" name="email" required>
+		
+				<label for="address">Adress:</label>
+				<input type="text" id="address" name="address" required>
+		
+				<label for="days">Vilka dagar vill du delta?</label>
+				<div id="days">
+					<input type="checkbox" id="day1" name="days[]" value="18 oktober">
+					<label for="day1">18 oktober</label>
+		
+					<input type="checkbox" id="day2" name="days[]" value="19 oktober">
+					<label for="day2">19 oktober</label>
+		
+					<input type="checkbox" id="day3" name="days[]" value="20 oktober">
+					<label for="day3">20 oktober</label>
+				</div>
+		
+				<label for="food">Matpreferenser:</label>
+				<div id="food">
+					<input type="radio" id="meat" name="food[]" value="Kött" required>
+					<label for="meat">Kött</label>
+		
+					<input type="radio" id="fish" name="food[]" value="Fisk" required>
+					<label for="fish">Fisk</label>
+		
+					<input type="radio" id="vegetarian" name="food[]" value="Vegetarisk" required>
+					<label for="vegetarian">Vegetarisk</label>
+				</div>
+		
+				<label for="allergies">Ange eventuell allergi eller andra önskemål:</label>
+					<textarea id="allergies" name="allergies" rows="4" cols="50"></textarea>
+				<button type="submit">Skicka Anmälan</button>
+			</form>
+		</section>
+
+	</main>
+
+    <footer>
+        <p>© 2024 Bättre Webb Konferens | Göteborg</p>
+    </footer>
+</body>
+</html>
