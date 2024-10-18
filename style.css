@@ -1,0 +1,178 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: clamp(2rem, 1rem + 10vw ,1rem);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	min-height: 100vh;
+}
+
+header {
+	background-color: var(--header-bg);
+	padding: var(--padding-1);
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+}
+main {
+	background-color: var(--section-bg);
+	flex-grow: 1;
+	align-items: center;
+	text-align: center;
+}
+main p {
+	padding: 1rem;
+}
+footer {
+	background-color: var(--footer-bg);
+	padding: var(--padding-1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#schedule {
+	background-color: var(--schedule-bg);
+	padding: 1rem;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	color: var(--schedule-txtcolor);
+}
+
+#schedule h2, p {
+	margin: 0;
+}
+
+#day {
+	margin-bottom: 2rem;
+}
+
+#register {
+	display: block;
+	grid-template-columns: 1fr 1fr;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--form-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#days, #food {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+	margin-top: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+button[type="submit"] {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--submitbtn-bg);
+    color: white;
+    font-size: 1rem;
+	border-bottom: 4px solid rgb(34, 34, 34);
+    border-radius: 3em;
+    cursor: pointer;
+    transition: all 0.5s;
+	transition-delay: 0.1s;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--buttonhover);
+	transform: translateY(-2px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.day ul {
+    list-style-type: none; /* Tar bort listmarkörerna specifikt för listorna i schemat */
+    padding-left: 0; /* Tar bort indrag */
+}
+
+.day ul li {
+    margin-bottom: 1rem; /* Skapar mellanrum mellan varje listobjekt */
+}
+
+#about p {
+	max-width: 600px;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+}
+
+.image-gallery {
+    display: flex; 
+    justify-content: flex-start; 
+    flex-wrap: wrap; 
+    gap: 0.5em; 
+    padding: 10px;
+	background-color: rgb(242, 230, 203);
+
+}
+
+.image-gallery img {
+    width: 30%;
+	flex-grow: 1;
+    height: 70vh; 
+    cursor: pointer;
+    box-sizing: border-box;
+	border-radius: 0.3em;
+	filter: grayscale(80%);
+	transition: 0.5s;
+	box-shadow: 0 4px 10px rgb(0, 0, 0, 0.2);
+	transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+	transform: scale(1.1);
+}
+
+input:invalid {
+	border: 2px solid red;
+	background-color: rgba(255, 0, 0, 0.1);
+}
+
+input:valid {
+	border: 2px solid green;
+	background-color: rgba(172, 208, 132, 0.5);
+}
+
+
+
+

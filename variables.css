@@ -1,0 +1,14 @@
+:root {
+	--header-bg: rgb(255, 211, 114);
+	--navbtn-bg: rgb(241, 91, 64);
+	--padding-1: 1em;
+	--footer-bg: rgb(242, 230, 203);
+	--section-bg: rgb(255, 211, 114);
+	--buttonhover: rgb(172, 208, 132);
+	--schedule-bg: rgb(241, 91, 64);
+	--schedule-txt: rgb(242, 230, 203);
+	--submitbtn-bg: rgb(241, 91, 64);
+	--schedule-txtcolor: rgb(242, 230, 203);
+}
+
+/* fin grön rgb(172, 208, 132) */
