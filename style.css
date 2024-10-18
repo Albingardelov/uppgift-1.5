@@ -148,6 +148,8 @@ button[type="submit"]:hover {
 
 .image-gallery img {
     width: 30%;
+	max-width: 100%;
+	flex: 1 1 200px;
 	flex-grow: 1;
     height: 70vh; 
     cursor: pointer;
@@ -160,6 +162,7 @@ button[type="submit"]:hover {
 }
 
 .image-gallery img:hover {
+	z-index: 10;
 	transform: scale(1.1);
 }
 
