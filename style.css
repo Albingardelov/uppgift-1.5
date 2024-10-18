@@ -123,12 +123,12 @@ button[type="submit"]:hover {
 }
 
 .day ul {
-    list-style-type: none; /* Tar bort listmarkörerna specifikt för listorna i schemat */
-    padding-left: 0; /* Tar bort indrag */
+    list-style-type: none; 
+    padding-left: 0; 
 }
 
 .day ul li {
-    margin-bottom: 1rem; /* Skapar mellanrum mellan varje listobjekt */
+    margin-bottom: 1rem; 
 }
 
 #about p {
@@ -140,24 +140,24 @@ button[type="submit"]:hover {
 
 .image-gallery {
     display: flex;
-    flex-direction: column; /* Gör hela gallerisektionen till en kolumn så att rubriken placeras ovanför bilderna */
-    align-items: center; /* Centrera innehållet horisontellt */
+    flex-direction: column; 
+    align-items: center; 
     gap: 0.5em; 
     padding: 10px;
     background-color: rgb(242, 230, 203);
 }
 
 .image-gallery h2 {
-    margin-bottom: 1rem; /* Avstånd mellan rubriken och bilderna */
-    text-align: center;  /* Centrera rubriken */
+    margin-bottom: 1rem; 
+    text-align: center;  
 }
 
 .image-gallery .image-container {
-    display: flex; /* Behåll flex för att rada upp bilderna */
+    display: flex; 
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 0.5em;
-    width: 100%; /* Full bredd för att fylla behållaren */
+    width: 100%; 
 }
 
 .image-gallery img {
